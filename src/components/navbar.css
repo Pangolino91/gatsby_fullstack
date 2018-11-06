@@ -1,0 +1,83 @@
+.whentop {
+    width: 100%;
+    top: 0; /* At the top */
+    z-index: 99;
+    transition: 0.4s;
+    height: 100px;
+    z-index: 9999;
+    font-size: 24px; 
+}
+
+.bgilight {
+    background-color: white !important;
+}
+
+#font_logo {
+    font-size: 24px;
+    color: #14BC22;
+}
+
+.write_logo {
+    width: 180px;
+    height: 30px;
+}
+
+a {
+    color: #14BC22 !important;
+}
+
+.logonowrite {
+    height: 67px;
+    width: 80px;
+    padding-right: 4px;
+    padding-bottom: 3px;
+}
+
+.whenscroll {
+    position: fixed; /* Sticky/fixed navbar */;
+    width: 100%;
+    z-index: 9999;
+    font-size: 18px; 
+}
+
+.logonowrite {
+    width: 3
+}
+
+
+.nav_top {
+    height: 100px;
+    transition: 0.4s;
+    z-index: 9999; 
+}
+
+.nav_down {
+    height: 70px;
+    transition: 0.4s;
+    z-index: 9999; 
+}
+
+.nav-link {
+    display: inline !important; 
+}
+
+.int_link_about {
+    padding-left: 10px;
+}
+
+.ml-auto {
+    background-color: white;
+}
+
+.collapse {
+    background-color:  white;
+    margin-left: -16px;
+    margin-right: -16px;
+    margin-top: -5px;
+}
+
+@media (max-width: 391px) {
+    .write_logo {
+        display: none;
+    }
+  }

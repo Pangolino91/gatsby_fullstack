@@ -1,0 +1,128 @@
+
+.App {
+    text-align: center;
+    background-image:
+     url('../images/skysc.jpg'), /*put the first one on the Top*/
+     url('../images/computer.jpg'),
+     url('../images/arch2.jpg'),
+     url('../images/stiliz.jpg');
+    animation: animatedBird 40s infinite;
+    height: 32rem;
+  }
+  
+  @keyframes animatedBird {
+    0% {
+      background-image: url('../images/stiliz.jpg');
+    }
+    10% {
+      background-image: url('../images/stiliz.jpg');
+    }
+    25% {
+      background-image: url('../images/computer.jpg');
+    }
+    35% {
+      background-image: url('../images/computer.jpg');
+    }
+    50% {
+      background-image: url('../images/skysc.jpg');
+    }
+    60% {
+      background-image: url('../images/skysc.jpg');
+    }
+    75% {
+      background-image: url('../images/computer.jpg');
+    }
+    100% {
+      background-image: url('../images/stiliz.jpg');
+    }
+  }
+
+  .frame {
+    -webkit-animation: fadeInUp 2s;
+    animation-delay: 0s; 
+}
+
+@keyframes fadeInUp {
+    0% {
+       opacity: 0;
+       transform: translateY(-20px);
+    }
+    100% {
+       opacity: 1;
+       transform: translateY(0);
+    }
+ }   
+
+
+
+  .logomain {
+    width: 400px;
+  }
+  
+  .App-header {
+    background-color: #222;
+    height: 150px;
+    padding: 20px;
+    color: white;
+  }
+  
+  .App-title {
+    font-size: 1.5em;
+  }
+  
+  #navbar {
+    height: 150px;
+  }
+  
+  .cards {
+    max-height: 200px;
+    width: auto;
+    height: auto;
+    object-fit: scale-down
+  }
+  
+  .prova {
+    max-width: 80%;
+    font-size: 15px;
+  }
+  
+  .centered {
+  }
+
+  .card {
+    width: 22rem;
+    height: 26rem;
+    text-align: center;
+    border-radius: 34px !important;
+    overflow: hidden;
+  }
+  
+  .frame {
+    border-radius: 34% !important;
+    padding-bottom: 20px !important;
+  }
+  
+
+  @media (max-width: 992px) {
+    .prova {
+      padding-left: 0px;
+    }
+  }
+
+  @media (min-width: 854px) {
+    .logomain {
+      width: 700px;
+      padding-bottom: 50px;
+    }
+  }
+
+  @media (max-width: 424px) {
+    .logomain {
+      width: 300px;
+      padding-bottom: 50px;
+    }
+
+    .card {
+      width: 280px;
+    }
+  }

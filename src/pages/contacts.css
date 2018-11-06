@@ -1,0 +1,12 @@
+.contact_main {
+    height: 22rem;
+    background-image: url('../images/blonde.jpg');
+    background-size: cover;
+    background-position: 0%;
+    -webkit-animation: MainfadeIn 0.8s;
+    animation-delay: 0s;
+}
+
+.placeHolder {
+  padding-bottom: 15vw;
+}
