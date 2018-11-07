@@ -2,6 +2,10 @@ module.exports = {
   siteMetadata: {
     title: 'Gatsby Default Starter',
   },
+  proxy: {
+    prefix: "/api",
+    url: "http://localhost:3000",
+  },
   plugins: [
     'gatsby-plugin-react-helmet',
     {

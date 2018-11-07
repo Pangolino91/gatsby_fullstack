@@ -23,8 +23,7 @@ export default class About extends Component {
 
     componentDidMount() {
         fetch('/users')
-          .then(res => res.json())
-          .then(users => this.setState({ users }));
+          .then(res => console.log(res))
       }
     
 
