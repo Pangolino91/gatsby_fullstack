@@ -6,7 +6,7 @@ const bodyparse = require('body-parser');
 var mysqlconnection = mysql.createConnection({
   host     : 'gator3304.hostgator.com',
   user     : 'pangolin_enrico',
-  password : '*****',
+  password : 'pangolino99',
   database : 'pangolin_database'
 });
 
@@ -19,7 +19,7 @@ mysqlconnection.connect(function(err) {
   }
 })
 
-router.get('/', (req, res) => {
+router.get('/api', (req, res) => {
   mysqlconnection.query('SELECT * FROM contact_requests', (err, rows, fields) => {
       if(!err) {
           res.send(JSON.stringify(rows, undefined, 2));

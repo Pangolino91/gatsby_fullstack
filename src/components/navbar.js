@@ -2,7 +2,7 @@ import './navbar.css';
 import Link from "gatsby-link";
 import logoNoWrite from '../images/logo_recconsulting/justglobenobckgrnd.png';
 import write from '../images/logo_recconsulting/write.png';
-
+import { withPrefix } from "gatsby"
 import React from 'react';
 import {
   Collapse,
@@ -17,6 +17,8 @@ import {
   DropdownMenu,
   Dropdown,
   DropdownItem } from 'reactstrap';
+
+
 
 export default class MainNavBar extends React.Component {
   constructor(props) {
@@ -102,9 +104,9 @@ scrolNav() {
               <NavItem>
                 <Link className="int_link_about" to="about">About</Link>
               </NavItem>
-               <NavItem>
-                <Link className="int_link_about" to="/contacts">Contacts</Link>    
-               </NavItem> 
+               <div>
+                <a className="int_link_about" href="https://www.recconsulting-services.com/contactpage.php">Contacts</a>    
+               </div> 
             </Nav>
           </Collapse>
         </Navbar>
